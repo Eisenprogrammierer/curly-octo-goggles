@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    
+
+    <title>Programushka</title>
+</head>
+
+<body>
+    <!-- ========== Banner = Headers + navbar ========== -->
+    <div class="banner">
+        <h1>Programushka</h1>
+        <h2>Turn ideas into programs</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#order">Order</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <!-- ========== Cards ========== -->
+
+    <!-- Introduction -->
+    <div class="card" id="introduction">
+        
+        <!-- Text and link -->
+        <div class="card-text">
+            <h2 class="card-title">Our work</h2>
+            <hr>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorum, quas placeat harum illum aspernatur ad odit reiciendis sequi animi dolorem consequuntur ipsam libero pariatur explicabo deleniti molestias minus voluptatum sit ratione. Natus, maiores nisi, hic ipsa molestias quos, eum at blanditiis ad porro similique? Unde, ad velit? Ex at impedit, magnam dicta velit quisquam sed maiores soluta, vel suscipit repudiandae facilis! Eum, minima!</p>
+            
+            <div class="link-wrap">
+                <a href="index.html">See more</a>
+            </div>
+        </div>
+
+        <!-- Preview image for the card -->
+        <div class="preview">
+            <img src="/resources/img/backend.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="card" id="projects">
+
+        <div class="preview">
+            <img src="/resources/img/projects.avif" alt="">
+        </div>
+
+        <div class="card-text">
+            <h2 class="card-title">Projects</h2>
+            <hr>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorum, quas placeat harum illum aspernatur ad odit reiciendis sequi animi dolorem consequuntur ipsam libero pariatur explicabo deleniti molestias minus voluptatum sit ratione. Natus, maiores nisi, hic ipsa molestias quos, eum at blanditiis ad porro similique? Unde, ad velit? Ex at impedit, magnam dicta velit quisquam sed maiores soluta, vel suscipit repudiandae facilis! Eum, minima!</p>
+            
+            <div class="link-wrap">
+                <a href="">See more</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Reviews -->
+    <div class="card" id="reviews">
+
+        <div class="card-text">
+            <h2 class="card-title">Reviews</h2>
+            <hr>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorum, quas placeat harum illum aspernatur ad odit reiciendis sequi animi dolorem consequuntur ipsam libero pariatur explicabo deleniti molestias minus voluptatum sit ratione. Natus, maiores nisi, hic ipsa molestias quos, eum at blanditiis ad porro similique? Unde, ad velit? Ex at impedit, magnam dicta velit quisquam sed maiores soluta, vel suscipit repudiandae facilis! Eum, minima!</p>
+            
+            <div class="link-wrap">
+                <a href="">See more</a>
+            </div>
+        </div>
+
+        <div class="preview">
+            <img src="/resources/img/backend.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- Order -->
+    <div class="card" id="order">
+
+        <div class="github">
+            <h2 class="card-title">GitHub</h2>
+            <hr>
+            <a href="https://github.com/Eisenprogrammierer" id="GHlink" target="_blank"><img src="https://avatars.githubusercontent.com/u/200214228?v=4" alt="GitHub Profile Picture"></a>
+            <p class="description">You can find all of my projects on my GitHub page as well as the Projects page of this website. Feel free to contact me there or request a project here by filling out the following form. </p>
+        
+            <div class="link-wrap">
+                <a href="https://github.com/Eisenprogrammierer" target="_blank">GitHub ↗</a>
+            </div>
+        </div>
+
+        <div class="order">
+            <h2 class="card-title">Order a project</h2>
+            <hr>
+            <!-- Project Order Form -->
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="project-type">Project Type</label>
+                <select id="project-type" name="project-type" required>
+                  <option value="" disabled selected >Select a project type...</option>
+                  <option value="basic">Basic</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced</option>
+                </select>
+              
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+              
+                <button type="submit">Send</button>
+              </form>
+        </div>
+        
+    </div>
+
+    <!-- About -->
+    <div class="card" id="about">
+
+        <div class="preview">
+            <img src="/resources/img/about.jpg" alt="">
+        </div>
+
+        <div class="card-text">
+            <h2 class="card-title">About</h2>
+            <hr>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorum, quas placeat harum illum aspernatur ad odit reiciendis sequi animi dolorem consequuntur ipsam libero pariatur explicabo deleniti molestias minus voluptatum sit ratione. Natus, maiores nisi, hic ipsa molestias quos, eum at blanditiis ad porro similique? Unde, ad velit? Ex at impedit, magnam dicta velit quisquam sed maiores soluta, vel suscipit repudiandae facilis! Eum, minima!</p>
+            
+            <div class="link-wrap">
+                <a href="">See more</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== Footer ========== -->
+    <footer>
+        <div class="footer-segment" id="contact">
+            <h3>Contact</h3>
+            <hr>
+            <a href="">Telegram</a>
+            <a href="">GitHub</a>
+            <a href="">VK</a>
+            <a href="">pasha@gmail.com</a>
+        </div>
+
+        <div class="footer-segment" id="links">
+            <h3>Links</h3>
+            <hr>
+            <a href="">link-1</a>
+            <a href="">link-2</a>
+            <a href="">link-3</a>
+        </div>
+
+        <div class="footer-segment" id="external">
+            <h3>External</h3>
+            <hr>
+            <a href="">partner-1</a>
+            <a href="">partner-2</a>
+            <a href="">partner-3</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
