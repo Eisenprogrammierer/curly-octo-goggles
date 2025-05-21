@@ -1,0 +1,664 @@
+:root {
+    /* Color pallette */
+    --lavender: #D7DAE5;
+    --brown: #9C6615;
+    --blue: #3F88C5;
+    --pear: #CFD11A;
+    --mikado: #FFC53A;
+    --black: #000000;
+    --white: #ffffff;
+    --cloud: #edece8;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    color: var(--black);
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    letter-spacing: .2rem;
+
+    scroll-behavior: smooth;
+}
+
+/* ---------- Heading ---------- */
+
+h1{
+    font-family: "Montserrat", 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 8rem;
+    letter-spacing: .5rem;
+}
+
+h2{
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    background-color: var(--lavender);
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+    width: auto;
+}
+
+nav a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--black);
+    background-color: var(--lavender);
+
+    text-align: center;
+    padding: 1rem 0;
+    flex: 1;
+
+    transition: background-color .3s;
+}
+
+nav a:hover{
+    background-color: aliceblue;
+}
+
+.hero-header {
+    height: 250px;
+    background-image: url(../img/home/header-background.png); /*Replace with your image*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+}
+
+.title{
+    margin-top: 6rem;
+}
+
+/* ---------- Cards ---------- */
+
+.card{
+    display: flex;
+    flex-direction: row;
+
+    font-size: 2rem;
+}
+
+.card-img{
+    height: 55rem;
+    width: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+
+    /* The color which fades over the images in the cards can be changed in these three rules */
+    -webkit-mask-image: linear-gradient(to right, white, transparent);
+    mask-image: linear-gradient(to right, white 50%, transparent 90% ,transparent 100%);
+}
+
+.left{
+    -webkit-mask-image: linear-gradient(to right, white, transparent);
+    mask-image: linear-gradient(to right, white 50%, transparent 90% ,transparent 100%);
+}
+
+.right{
+    -webkit-mask-image: linear-gradient(to left, white, transparent);
+    mask-image: linear-gradient(to left, white 50%, transparent 90% ,transparent 100%);
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: 500;
+
+    font-family: "Montserrat", 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 8rem;
+}
+
+.card hr{
+    border: .5px solid black;
+}
+
+.card-text{
+    width: 60rem;
+    margin-top: 2.4rem;
+
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-weight: 100;
+}
+
+/* ---------- CSS for optional card button to direct user to another page ----------  */
+
+/* .card-button{
+    margin-top: 6.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+
+    border: none;
+    background-color: var(--brown);
+    color: var(--white);
+
+    width: 13rem;
+    
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: .3rem;
+    
+    transition: background-color .3s;
+}
+
+.card-button:hover{
+    background-color: var(--mikado);
+    color:var(--black)
+} */
+
+/* ---------- Reviews Title ---------- */
+
+.title-only{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 5rem auto;
+}
+
+.title-only hr{
+    width: 80%;
+    border: 1.3px solid var(--black);
+}
+
+/* ---------- Reviews ---------- */
+
+.reviews{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 3rem;
+
+    padding: 3rem;
+}
+
+.review hr{
+    width: 80%;
+    height: 1.3px;             
+    border: none;            
+    background-color: var(--black);
+    margin: 1rem auto;
+}
+
+.user-photo{
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+
+    border-radius: 100%;
+}
+
+.user-name{
+    margin-top: 2rem;
+    
+    font-family: "Montserrat", 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.user-quote{
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: justify;
+
+    width: 20rem;
+}
+
+.user-photo{
+    height: 20rem;
+    width: 20rem;
+}
+
+.quote-symbol{
+    margin-top: 2rem;
+    height: 5rem;
+    width: 5rem;
+}
+
+/* ---------- Awards Title ---------- */
+
+.title-only{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 5rem auto;
+}
+
+.title-only hr{
+    width: 80%;
+    border: 1.3px solid var(--black);
+}
+
+/* ---------- Awards ---------- */
+
+.awards{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.award{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+
+    padding: 3rem;
+}
+
+.award hr{
+    width: 80%;
+    height: 1.3px;
+    border: none;
+    background-color: var(--black);
+    margin: 1rem auto;
+}
+
+.award-photo{
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+
+}
+
+.award-name{
+    margin-top: 2rem;
+    
+    font-family: "Montserrat", 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.about-award{
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: justify;
+
+    width: 20rem;
+}
+
+.award-photo{
+    height: 20rem;
+    width: 20rem;
+}
+
+/* ---------- Contact Section ---------- */
+/* The entire section containing both the GitHub profile link
+and the contact form for ordering a project */
+
+.contact-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* ---------- Socials / Links ---------- */
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.github{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.github img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.github p{
+    width: 35rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-weight: 100;
+    font-size: 2rem;
+    letter-spacing: .5;
+}
+
+/* ---------- Contact Form ---------- */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 6rem;
+}
+
+.contact hr, .socials hr{
+    width: 35rem;
+    border: 1px solid black;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-items:flex-start;
+    justify-content: center;
+
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    font-size: 2.4rem;
+    letter-spacing: .2rem;
+
+    width: 35rem;
+}
+
+form label{
+    align-self: flex-start;
+
+    margin-top: 3rem;
+}
+
+form input{
+    width: 100%;
+    height: 4rem;
+
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 1.8rem;
+
+    padding: 1rem;
+
+    border-radius: .5rem;
+    border: 0;
+    background-color: var(--lavender);
+}
+
+textarea{
+    width: 100%;
+
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 1.8rem;
+
+    padding: 1rem;
+    border: 0;
+    border-radius: .5rem;
+    background-color: var(--lavender);
+
+    resize: none;
+}
+
+button{
+    margin: 4rem;
+    padding: 2rem;
+
+    border: none;
+    background-color: var(--brown);
+    color: var(--white);
+
+    width: fit-content;
+    
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: .3rem;
+    
+    transition: background-color .3s;
+}
+
+button:hover{
+    background-color: var(--mikado);
+    color:var(--black)
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+footer h3{
+    font-family: "Montserrat", 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+}
+
+footer p{
+    font-family: "Bebas Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 3rem;
+
+    transition: color .3s;
+}
+
+footer a:hover{
+    color: var(--mikado);
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* Devices under 768px (tablets and phones) */
+@media screen and (max-width: 768px) {
+
+    .hero-header {
+        height: 200px;
+    }
+
+    .title h1 {
+        font-size: 5rem;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+        letter-spacing: 1.5rem;
+    }
+
+    .card {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .card-info{
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 30rem;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .card-text {
+        width: 90%;
+        font-size: 1.6rem;
+    }
+
+    .card-title {
+        font-size: 5rem;
+    }
+
+    .card-button {
+        font-size: 1.6rem;
+        padding: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .review {
+        margin: 2rem;
+    }
+
+    .user-quote {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        padding: 2rem;
+    }
+
+    .links p,
+    form {
+        width: 90%;
+    }
+
+    .links {
+            flex-wrap: wrap;
+            justify-content: center;
+    }
+
+    footer h3 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    footer a {
+        font-size: 2.5rem;
+    }
+}
+
+/* Devices under 480px (phones only) */
+@media screen and (max-width: 480px) {
+
+    /* Hero Header */
+    .hero-header {
+        height: 180px;
+    }
+
+    .title h1 {
+        font-size: 4rem;
+    }
+
+    .title h2 {
+        font-size: 1.8rem;
+        letter-spacing: 1rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .card-title {
+        font-size: 4rem;
+    }
+
+    .card-text {
+        font-size: 1.4rem;
+    }
+
+    .card-button {
+        width: 100%;
+    }
+
+    .user-photo {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .quote-symbol {
+        width: 3rem;
+        height: 3rem;
+    }
+}
